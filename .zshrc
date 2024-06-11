@@ -1,2 +1,2 @@
 # Load aliases:
-[ -f ~/.aliases.sh ] && source ~/.aliases.sh
+[ -f ~/.sh/aliases ] && source ~/.sh/aliases
