@@ -1,8 +1,17 @@
-(defvar stotzem-modules-directory (expand-file-name "modules" user-emacs-directory)
+(defvar stotzem-modules-directory
+  (expand-file-name "modules" user-emacs-directory)
   "Directory containing Stotzem's configuration modules.")
 
 (defvar stotzem-theme 'misterioso
   "Name of the theme that will be loaded.")
+
+(setq warning-suppress-log-types
+ '(
+   ;; Prevent byte compiler warnings
+   (bytecomp)
+   ;; Prevent native compilation warnings
+   (comp)
+   ))
 
 ;; Load user-customized variables file if it exists
 (load (expand-file-name "user-variables.el" user-emacs-directory) 'noerror)
@@ -10,6 +19,7 @@
 ;; Load configuration sections from the modules directory
 (dolist (file '(
                 "backup"
+                "editing"
                 "display"
                 ))
   (load (expand-file-name file stotzem-modules-directory)))
