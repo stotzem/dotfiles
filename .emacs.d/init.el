@@ -21,6 +21,7 @@
                 "backup"
                 "editing"
                 "display"
+                "qol"
                 ))
   (load (expand-file-name file stotzem-modules-directory)))
 
