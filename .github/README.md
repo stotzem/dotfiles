@@ -2,12 +2,6 @@
 
 ## Install
 
-Create necessary files and directories:
-~~~sh
-echo "/.cfg" > $HOME/.gitignore; \
-mkdir -p $HOME/.cache; \
-touch $HOME/.cache/zshhistory
-~~~
 
 Clone the repository:
 ~~~sh

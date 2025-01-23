@@ -10,6 +10,7 @@ if [ -d "$HOME/.bin" ]; then
     export PATH="$PATH:$HOME/.bin"
 fi
 
-if [ -d $(gem env user_gemhome) ]; then
-    export PATH="$PATH:$(gem env user_gemhome)/bin"
+if command -v gem > /dev/null 2>&1; then
+    export GEM_HOME=$(gem env user_gemhome)
+    export PATH="$PATH:$GEM_HOME/bin"
 fi
