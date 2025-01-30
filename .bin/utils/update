@@ -5,6 +5,3 @@
 
 [ -f /usr/bin/flatpak ] && \
   sudo /usr/bin/flatpak update --noninteractive --assumeyes
-
-[ -f /usr/bin/emacs ] && \
-  /usr/bin/emacs --eval '(progn (package-upgrade-all) (kill-emacs))'
