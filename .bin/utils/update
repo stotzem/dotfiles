@@ -3,5 +3,8 @@
 [ -f /usr/bin/pacman ] && \
   sudo pacman -Syu
 
+[ -f /usr/bin/apt ] && \
+  { sudo apt update; sudo apt upgrade -y; }
+
 [ -f /usr/bin/flatpak ] && \
   sudo /usr/bin/flatpak update --noninteractive --assumeyes
