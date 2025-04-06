@@ -1,7 +1,13 @@
+# ⚠️ This repository has been archived and is no longer maintained!
+
+**This project has been migrated to my self-hosted Gitea instance:**  
+🔗 [oliver/dotfiles on os.ax](https://os.ax/oliver/dotfiles)
+
+----
+
 # Dotfiles
 
 ## Install
-
 
 Clone the repository:
 ~~~sh
