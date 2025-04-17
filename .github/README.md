@@ -1,7 +1,7 @@
 # ⚠️ This repository has been archived and is no longer maintained!
 
 **This project has been migrated to my self-hosted Gitea instance:**  
-🔗 [oliver/dotfiles on os.ax](https://os.ax/oliver/dotfiles)
+🔗 [oliver/dotfiles @ git.os.ax](https://git.os.ax/oliver/dotfiles)
 
 ----
 
