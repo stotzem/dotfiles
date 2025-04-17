@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 
-[ -f /usr/bin/pacman ] && \
-  sudo pacman -Syu
+if [ -f /usr/bin/yay ]; then
+  sudo /usr/bin/yay -Syu
+elif [ -f /usr/bin/pacman ]; then
+  sudo /usr/bin/pacman -Syu
+fi
 
-[ -f /usr/bin/apt ] && \
-  { sudo apt update; sudo apt upgrade -y; }
+if [ -f /usr/bin/apt ]; then
+  sudo /usr/bin/apt update
+  sudo /usr/bin/apt upgrade -y
+fi
 
-[ -f /usr/bin/flatpak ] && \
+if [ -f /usr/bin/flatpak ]; then
   sudo /usr/bin/flatpak update --noninteractive --assumeyes
+fi
