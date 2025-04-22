@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -f /usr/bin/yay ]; then
-  sudo /usr/bin/yay -Syu
+  /usr/bin/yay -Syu
 elif [ -f /usr/bin/pacman ]; then
   sudo /usr/bin/pacman -Syu
 fi
