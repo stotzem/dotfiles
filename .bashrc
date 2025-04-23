@@ -5,6 +5,7 @@
 # ALIASES
 #-------------------------------------------------------------------------------
 
+alias s="unison -batch"
 alias u="$HOME/.bin/utils/update"
 
 # Alias for manage dotfiles using Git:
