@@ -8,6 +8,7 @@ au = add --update
 c  = commit
 cm = commit -m
 d  = diff
+ds = diff --stat
 l  = log --graph --pretty=format:'%Cred%h %Cgreen%ad %Creset%s%C(yellow)%d \
 %C(bold blue)[%cn]' --date=short -30
 ls = ls-files
