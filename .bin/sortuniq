@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+print_help() {
+    echo "Usage: sortuniq INPUT_FILE [OUTPUT_FILE]"
+    echo "Usage: sortuniq OPTIONS"
+    echo
+    echo "Processes a text file by sorting its lines and removing"
+    echo "duplicates."
+    echo "By default, the input file is overwritten unless an OUTPUT_FILE"
+    echo "is specified."
+    echo
+    echo "Options:"
+    echo "  -h, --help   Display this help message"
+}
+
+if [[ "$#" -lt 1 || "$1" == "-h" || "$1" == "--help" ]]; then
+    print_help
+    exit 0
+fi
+
+
+if [ ! -f "$1" ]; then
+  echo "Error: $1 doesn't exists!"
+  exit 1
+fi
+
+if [ "$#" -lt 2 ]; then
+    sort "$1" | uniq > "${1}.tmp"
+    mv "${1}.tmp" "$1"
+else
+    sort "$1" | uniq > "${2}"
+fi
+
